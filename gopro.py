@@ -38,7 +38,8 @@ def convgplist():
 
 
 def compareList():
-    comparedList = [list for list in goproMedia if list not in localMedia()]
+    localmedia = localMedia()
+    comparedList = [l for l in goproMedia if l not in localmedia]
     return comparedList
 
 
